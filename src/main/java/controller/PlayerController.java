@@ -2,6 +2,7 @@ package controller;
 
 import impl.Board;
 import impl.Player;
+import interfaces.Jumper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +24,34 @@ public class PlayerController {
         int start = currPlayer.getCurrPos();
         int delta = diceController.rollDices();
         int end = start + delta;
+
         // logic to move to end and see if ladder and snake there
         // if so move ahead one more time
-        // update board
-        // return end position
+        List<Jumper> snakes = board.getSnakes();
+        boolean gotBitten = false;
+        for (Jumper snake : snakes) {
+            if (snake.getStart() == end) {
+                System.out.println("Ouch...got bitten 🐍");
+                end = snake.getEnd();
+                gotBitten = true;
+                break;
+            }
+        }
+        end = Math.max(0, end);
+
+        List<Jumper> ladders = board.getLadders();
+        // if player came here after being bitten
+        // or a cell has both ladder and snake, snake is preferred
+        if (!gotBitten) {
+            for (Jumper ladder : ladders) {
+                if (ladder.getStart() == end) {
+                    System.out.println("Wow...promoted 🪜");
+                    end = ladder.getEnd();
+                    break;
+                }
+            }
+        }
+
         System.out.println("Moved " + start + " -> " + end);
         currPlayer.setCurrPos(end);
         currPlayerNumber = (currPlayerNumber+1) % players.size();

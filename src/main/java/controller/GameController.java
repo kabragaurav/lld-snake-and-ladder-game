@@ -28,13 +28,9 @@ public class GameController {
         PlayerController playerController = new PlayerController(numberOfPlayers);
         DiceController diceController = new DiceController(numberOfDices);
         List<Player> players = playerController.getPlayers();
-        Map<Integer, Integer> playerIdToPos = new HashMap<>();
-        for (Player player : players) {
-            playerIdToPos.put(player.getId(), 0);
-        }
         List<Jumper> snakes = getSnakes();
         List<Jumper> ladders = getLadders();
-        Board board = new Board(boardDim, snakes, ladders, playerIdToPos);
+        Board board = new Board(boardDim, snakes, ladders);
         Game game = new Game(playerController, diceController, board);
         games.add(game);
         return game;

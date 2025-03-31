@@ -21,4 +21,12 @@ public abstract class Jumper {
             assert start > end;
         }
     }
+
+    public int getStart() {
+        return start;
+    }
+
+    public int getEnd() {
+        return end;
+    }
 }

@@ -16,64 +16,64 @@ public class Main {
 SAMPLE OUTPUT:
 
 Turn of player_0
-Moved 0 -> 5
+Wow...promoted 🪜
+Moved 0 -> 16
 Turn of player_1
-Moved 0 -> 5
+Moved 0 -> 6
 Turn of player_0
-Moved 5 -> 10
+Moved 16 -> 22
 Turn of player_1
-Moved 5 -> 10
+Moved 6 -> 14
 Turn of player_0
-Moved 10 -> 13
+Moved 22 -> 30
 Turn of player_1
-Moved 10 -> 19
+Moved 14 -> 21
 Turn of player_0
-Moved 13 -> 20
+Moved 30 -> 37
 Turn of player_1
-Moved 19 -> 26
+Moved 21 -> 33
 Turn of player_0
-Moved 20 -> 28
+Moved 37 -> 43
 Turn of player_1
-Moved 26 -> 34
+Moved 33 -> 45
 Turn of player_0
-Moved 28 -> 35
+Moved 43 -> 54
 Turn of player_1
-Moved 34 -> 42
+Moved 45 -> 55
 Turn of player_0
-Moved 35 -> 40
+Moved 54 -> 62
 Turn of player_1
-Moved 42 -> 48
+Moved 55 -> 59
 Turn of player_0
-Moved 40 -> 51
+Moved 62 -> 69
 Turn of player_1
-Moved 48 -> 54
+Moved 59 -> 62
 Turn of player_0
-Moved 51 -> 61
+Ouch...got bitten 🐍
+Moved 69 -> 60
 Turn of player_1
-Moved 54 -> 60
+Moved 62 -> 65
 Turn of player_0
-Moved 61 -> 72
+Moved 60 -> 67
 Turn of player_1
-Moved 60 -> 66
+Moved 65 -> 71
 Turn of player_0
-Moved 72 -> 76
+Moved 67 -> 75
 Turn of player_1
-Moved 66 -> 73
+Moved 71 -> 76
 Turn of player_0
-Moved 76 -> 81
+Moved 75 -> 81
 Turn of player_1
-Moved 73 -> 80
+Moved 76 -> 85
 Turn of player_0
-Moved 81 -> 91
+Moved 81 -> 86
 Turn of player_1
-Moved 80 -> 86
+Moved 85 -> 93
 Turn of player_0
-Moved 91 -> 99
+Moved 86 -> 97
 Turn of player_1
-Moved 86 -> 90
-Turn of player_0
-Moved 99 -> 109
+Moved 93 -> 105
 =====================
-WON: player_0
+WON: player_1
 =====================
  */
