@@ -1,4 +1,4 @@
-# Snake & Ladder Game
+# Snake & Ladder Game 🐍🪜
 by Gaurav Kabra
 
 ---
@@ -15,6 +15,8 @@ by Gaurav Kabra
 - If a cell has both ladder and snake, snake is preferred.
 ---
 
+## LLD
+![](./assets/Snake&Ladder.png)
 
 ## Interfaces And Abstract Classes
 
